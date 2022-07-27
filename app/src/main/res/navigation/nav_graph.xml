@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/musicPlayerFragment">
+
+    <fragment
+        android:id="@+id/musicPlayerFragment"
+        android:name="com.example.a10.dars.sodda.musicplayer.MusicPlayerFragment"
+        android:label="fragment_music_player"
+        tools:layout="@layout/fragment_music_player" >
+        <action
+            android:id="@+id/action_musicPlayerFragment_to_allMusicListFragment"
+            app:destination="@id/allMusicListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/allMusicListFragment"
+        android:name="com.example.a10.dars.sodda.musicplayer.AllMusicListFragment"
+        android:label="fragment_all_music_list"
+        tools:layout="@layout/fragment_all_music_list" />
+</navigation>
